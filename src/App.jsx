@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [score, setScore] = useState(76);
   const handlscore =(val)=>{
-    if(score>101){
+    if(score>=101){
       return;
     }
     setScore(score+val)
