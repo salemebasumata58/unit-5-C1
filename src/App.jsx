@@ -12,7 +12,7 @@ function App() {
   }
   const [wicket, setWicket] = useState(2);
   const handlewicket =(val)=>{
-    if(score>101){
+    if(score>=101){
       return;
     }
     if(wicket>=12){
