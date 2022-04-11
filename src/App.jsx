@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [score, setScore] = useState(76);
   const handlscore =(val)=>{
-    if(score>99){
+    if(score>101){
       return;
     }
     setScore(score+val)
@@ -12,7 +12,7 @@ function App() {
   }
   const [wicket, setWicket] = useState(2);
   const handlewicket =(val)=>{
-    if(score>99){
+    if(score>101){
       return;
     }
     if(wicket>=12){
