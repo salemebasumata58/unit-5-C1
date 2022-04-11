@@ -2,13 +2,23 @@ import { useState } from "react";
 import './App.css'; 
 
 function App() {
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(76);
   const handlscore =(val)=>{
+    if(score>99){
+      return;
+    }
     setScore(score+val)
     console.log("score",score+val)
   }
-  const [wicket, setWicket] = useState(0);
+  const [wicket, setWicket] = useState(2);
   const handlewicket =(val)=>{
+    if(score>99){
+      return;
+    }
+    if(wicket>=12){
+      return
+    }
+   
     setWicket(wicket+val)
     console.log("wicket",wicket+val)
   }
@@ -63,7 +73,7 @@ function App() {
               // Show Over here in the format: "over.ball" eg: 4.5 means 4th over and 5th ball
               // if 1 more ball is thrown then over is now 5.0
               // you have to write logic to form this string from current ball number.
-             
+             8.2
             }
           </h1>
         </div>
