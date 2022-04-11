@@ -23,7 +23,7 @@ function App() {
     console.log("wicket",wicket+val)
   }
 
-  const [ball, setBall] = useState(0);
+  const [ball, setBall] = useState(50);
   const handleball = (val) =>{
     setBall(ball+val);
   }
